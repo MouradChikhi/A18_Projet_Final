@@ -15,13 +15,16 @@ public class Etudiant {
         this.email = email;
         this.specialite = specialite;
     }
-    public Etudiant(){
-    }
-    public Etudiant(String nom, String prenom, String email) {
+    public Etudiant(String nom, String prenom, String email, String specialite) {
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
+        this.specialite = specialite;
     }
+    public Etudiant() {
+
+    }
+
     public int getId() {
         return id;
     }
