@@ -2,20 +2,14 @@ package edu.b2b.a18.a18_projet_final.Model;
 
 public class Etudiant {
 
-    private int id;
-    private String nom;
+    private static int id = 0;
     private String prenom;
+    private String nom;
     private String email;
     private String specialite;
 
-    public Etudiant(int id, String nom, String prenom, String email, String specialite) {
-        this.id = id;
-        this.nom = nom;
-        this.prenom = prenom;
-        this.email = email;
-        this.specialite = specialite;
-    }
     public Etudiant(String nom, String prenom, String email, String specialite) {
+        id++;
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
@@ -27,10 +21,6 @@ public class Etudiant {
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getNom() {
@@ -62,8 +52,8 @@ public class Etudiant {
     public String toString() {
         return "Etudiant{" +
                 "id=" + id +
-                ", nom='" + nom + '\'' +
                 ", prenom='" + prenom + '\'' +
+                ", nom='" + nom + '\'' +
                 ", email='" + email + '\'' +
                 ", specialite='" + specialite + '\'' +
                 '}';

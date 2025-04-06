@@ -14,12 +14,12 @@ public class LocalDataStore {
     private LocalDataStore() {
         // Sample data
         this.etudiants = new ArrayList<>(Arrays.asList(
-                new Etudiant(1, "Jean", "Dupont", "jeandupont@gmail.com", "Mathématiques"),
-                new Etudiant(2, "Marie", "Blanco", "marieb@gmail.com", "Informatique"),
-                new Etudiant(3, "Jim", "Beam", "jbeam@live.com", "Physique"),
-                new Etudiant(4, "Richard", "Gagneu", "richardgagneu@hotmail.com", "Chimie"),
-                new Etudiant(5, "Philippe", "Savoyard", "psavoyard@gmail.com", "Biologie"),
-                new Etudiant(6, "Sylvie", "Duhamel", "sylvieduhamel@gmail.com", "Géologie")
+                new Etudiant("Jean", "Dupont", "jeandupont@gmail.com", "Mathématiques"),
+                new Etudiant("Marie", "Blanco", "marieb@gmail.com", "Informatique"),
+                new Etudiant("Jim", "Beam", "jbeam@live.com", "Physique"),
+                new Etudiant("Richard", "Gagneu", "richardgagneu@hotmail.com", "Chimie"),
+                new Etudiant("Philippe", "Savoyard", "psavoyard@gmail.com", "Biologie"),
+                new Etudiant("Sylvie", "Duhamel", "sylvieduhamel@gmail.com", "Géologie")
         ));
     }
 

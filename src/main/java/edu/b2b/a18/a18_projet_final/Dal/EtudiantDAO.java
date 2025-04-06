@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface EtudiantDAO {
     List<Etudiant> getAllEtudiants();
+    void addEtudiant(Etudiant etudiant);
 }

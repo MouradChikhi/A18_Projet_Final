@@ -21,17 +21,11 @@ public class EtudiantDAOLocal implements EtudiantDAO {
         return new ArrayList<>(this.datastore.getEtudiants()); // Retourne une copie de la liste pour éviter les modifications externes
     }
 
+    @Override
     public void addEtudiant(Etudiant etudiant) {
         if (this.datastore == null) {
             throw new IllegalStateException("La base de données n'est pas initialisée.");
         }
         this.datastore.addEtudiant(etudiant);
-    }
-
-    public boolean removeEtudiant(int id) {
-        if (this.datastore == null) {
-            throw new IllegalStateException("La base de données n'est pas initialisée.");
-        }
-        return this.datastore.removeEtudiant(id);
     }
 }

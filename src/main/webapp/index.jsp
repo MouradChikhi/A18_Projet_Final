@@ -47,7 +47,14 @@
                 </tbody>
             </table>
         </div>
+        <div class="text-end pe-3 pb-3">
+            <form action="HomeServlet" method="post">
+                <input type="hidden" name="action" value="ajouter">
+                <button type="submit" class="btn btn-primary">Ajouter un étudiant</button>
+            </form>
+        </div>
     </div>
+
 </div>
 
 <!-- Bootstrap JS and dependencies -->
